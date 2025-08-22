@@ -1,0 +1,47 @@
+You are a senior full-stack developer and UX strategist.  
+You're improving a professional construction workforce management app built with React, TypeScript, TailwindCSS and PostgreSQL.  
+
+Current project context:  
+- The app already has modules for Timesheets, Invoices, Tools Inventory, Material Requests and Vacation Calendar.  
+- Everything works, but now we want to polish the UX and improve role management and templates.
+
+Your next task is to implement 2 powerful features that simplify user workflows and increase security:
+
+🧩 1. Login System with Role Separation
+- Implement an authentication system (Node.js or equivalent backend) with JWT-based login.  
+- Roles: "admin" and "tech" (technician).  
+- Admin can access all user data, dashboards and management views.  
+- Technician can only see and manage their own records.  
+- Protect all routes and pages based on the user role.  
+- Use secure practices (hash passwords, store roles, token expiration).  
+- Add frontend login form with redirect logic based on role.
+
+📋 2. Smart Template System for Timesheet Entries  
+- Implement a component that lets users select a “template” for their workday.  
+- Example template: "Normal Workday – Trabalho Normal".  
+  When selected, this template should prefill some fields:  
+    - date = today  
+    - situation = “Trabalho Normal” (non-editable)  
+- The system must then request the missing fields from the user:  
+    - work location  
+    - supervisor (encarregado)  
+    - travel distance  
+    - overtime hours  
+- The form must be modular and reusable, allowing creation of more templates in the future.  
+- Make UI intuitive, minimal clicks, mobile-friendly.
+
+🔧 Constraints
+- Use clean and modular React components with Tailwind.  
+- Use TypeScript everywhere.  
+- Follow separation of concerns and clean architecture.  
+- Optimize backend logic for low-cost hosting (minimal dependencies).  
+
+🎯 Final Deliverables
+1. Full code for login backend (auth API, roles, secure session)  
+2. Frontend auth flow with role-based navigation  
+3. Component system for smart templates with auto-prefill logic  
+4. Code examples showing how to integrate both features into the existing app  
+5. Any necessary changes to database schema (users, roles, timesheets)
+
+Bonus (if possible):  
+- UX suggestions for future improvements (auto-fill based on past patterns, template builder, etc.)

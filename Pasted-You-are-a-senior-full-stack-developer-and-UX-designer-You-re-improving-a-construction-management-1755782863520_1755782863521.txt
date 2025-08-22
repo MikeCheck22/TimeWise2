@@ -1,0 +1,60 @@
+You are a senior full-stack developer and UX designer.
+
+You're improving a construction management system built in React + TypeScript + TailwindCSS + PostgreSQL.
+
+The current goal is to improve the time registration workflow using context-aware templates.
+
+🎯 Objective: Implement a smart system with 6 distinct templates, each with its own form and logic.
+
+📌 Available Templates and Required Fields:
+
+1. Trabalho – Horário Normal  
+   - Date  
+   - Site Manager (Encarregado de Obra)  
+   - Work Location (Obra)  
+   - Travel Distance (Deslocação)  
+   - Overtime Hours  
+
+2. Trabalho – Horário Reduzido  
+   - Date  
+   - Site Manager  
+   - Work Location  
+
+3. Trabalho – Fim de Semana  
+   - Date  
+   - Site Manager  
+   - Work Location  
+   - Travel Distance  
+   - Overtime Hours  
+
+4. Férias  
+   - Start Date  
+   - End Date  
+
+5. Falta  
+   - Date  
+
+6. Baixa  
+   - Start Date  
+   - End Date  
+
+🛠️ Functional Requirements:
+- When a user clicks on a template, they are routed to a dedicated page with only the relevant fields.
+- Each form must be preconfigured according to the template.
+- Forms must have proper validation and visual feedback.
+- Use a common layout and reusable UI components but with flexibility for per-template fields.
+- All data must be stored in PostgreSQL with correct associations (user ID, template type, timestamps, etc.).
+
+📦 Technical Constraints:
+- Use React + TypeScript + TailwindCSS.
+- Keep the form code modular and DRY (Don’t Repeat Yourself).
+- Forms must be mobile-first and very user-friendly.
+- Ensure scalability (easy to add new templates later).
+- Minimal dependencies (optimize for low-cost hosting).
+
+🎁 Deliverables:
+1. Dynamic Template Form System with the 6 templates.  
+2. Route-based navigation (example: /template/trabalho-normal → shows correct form).  
+3. Full React components and backend structure to save the data correctly.  
+4. Type-safe models and database schema example (PostgreSQL).  
+5. UI flow with smooth navigation and minimal user clicks.
